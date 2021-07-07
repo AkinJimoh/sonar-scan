@@ -1,32 +1,16 @@
-# SonarQube Scanning Examples
+# Basic Maven Example
 
-[SonarQube SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/) scanning and code coverage import examples for various languages and build tools.
+This simple Maven project is importing JaCoCo's coverage report. For multi-module project example 
+see [multi-module Maven project](../maven-multimodule/README.md)
 
-## Examples
+## Usage
 
-[SonarQube-Scanner with various languages](sonarqube-scanner/)
+* Build the project, execute all the tests and analyze the project with SonarQube Scanner for Maven(from root  of the project):
 
-[Java - Jacoco Code Coverage](doc/jacoco.md)
+```shell
+        mvn clean verify sonar:sonar
+```
 
-[Objective-C - LLVM Coverage](objc-llvm-coverage/)
+## Documentation
 
-[SonarQube-Scanner-Ant](sonarqube-scanner-ant/)
-
-[SonarQube-Scanner-Build-Wrapper-Linux](sonarqube-scanner-build-wrapper-linux/)
-
-[SonarQube-Scanner-Gradle](sonarqube-scanner-gradle/gradle-basic/)
-
-[SonarQube-Scanner-Gradle Multi-Module](sonarqube-scanner-gradle/gradle-multimodule/)
-
-[SonarQube-Scanner-Gradle Multi-Module Code Coverage](sonarqube-scanner-gradle/gradle-multimodule-coverage/)
-
-[SonarQube-Scanner-Maven](sonarqube-scanner-maven/maven-basic/)
-
-[SonarQube-Scanner-Maven (Java + Kotlin with coverage)](sonarqube-scanner-maven/maven-multilingual/)
-
-[SonarQube-Scanner-Maven Multi-Module](sonarqube-scanner-maven/maven-multimodule/)
-
-[SonarQube-Scanner-MSBuild CSharp](sonarqube-scanner-msbuild/CSharpProject/)
-
-[SonarQube-Scanner-Swift Code Coverage](swift-coverage/)
-
+[SonarScanner for Maven](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-maven/)
